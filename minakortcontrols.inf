@@ -1,0 +1,13 @@
+[version]
+    signature="$CHICAGO$"
+    AdvancedINF=2.0
+ [Add.Code]
+    MinakortControls.dll=MinakortControls.dll
+    GdiPlus.dll=GdiPlus.dll
+ [MinakortControls.dll]
+    file-win32-x86=thiscab
+    clsid={215DA363-C55E-4597-861A-753F6C927E31}
+    FileVersion=3,1,1,1
+    RegisterServer=yes
+ [Gdiplus.dll]
+    file-win32-x86=http://localhost/gdiplus.cab

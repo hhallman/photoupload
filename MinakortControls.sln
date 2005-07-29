@@ -1,0 +1,72 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MinakortControls", "MinakortControls.vcproj", "{B6EF0305-ABFB-4DFE-AD3C-C0A9C6C93B16}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoAlbumWeb", "http://localhost/photoalbum/PhotoAlbumWeb.csproj", "{7D846D1E-9874-49BE-AA48-B31E34F68682}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MinakortControlsInstallation", "MinakortControlsInstallation\MinakortControlsInstallation.vcproj", "{2932141A-8C54-476A-9BA2-18EF3A2E2F51}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetFilesControl", "GetFilesControl\GetFilesControl.csproj", "{31D13F99-359D-4559-A9A8-912756D23B6A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 4
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {5B3E772C-9B69-4086-AC1B-1D7038AEE7C2}
+		SccProjectUniqueName1 = http://localhost/photoalbum/PhotoAlbumWeb.csproj
+		SccProjectName1 = $/PhotoAlbum/PhotoAlbumWeb
+		SccLocalPath1 = ..\\PhotoAlbumWeb
+		CanCheckoutShared = false
+		SccProjectEnlistmentChoice1 = 2
+		SccProjectUniqueName2 = MinakortControls.vcproj
+		SccLocalPath2 = .
+		CanCheckoutShared = false
+		SccProjectUniqueName3 = MinakortControlsInstallation\\MinakortControlsInstallation.vcproj
+		SccLocalPath3 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection3 = MinakortControlsInstallation\\
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		DEBUG Unicode = DEBUG Unicode
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{B6EF0305-ABFB-4DFE-AD3C-C0A9C6C93B16}.Debug.ActiveCfg = Debug|Win32
+		{B6EF0305-ABFB-4DFE-AD3C-C0A9C6C93B16}.Debug.Build.0 = Debug|Win32
+		{B6EF0305-ABFB-4DFE-AD3C-C0A9C6C93B16}.DEBUG Unicode.ActiveCfg = DEBUG Unicode|Win32
+		{B6EF0305-ABFB-4DFE-AD3C-C0A9C6C93B16}.DEBUG Unicode.Build.0 = DEBUG Unicode|Win32
+		{B6EF0305-ABFB-4DFE-AD3C-C0A9C6C93B16}.Release.ActiveCfg = Release|Win32
+		{B6EF0305-ABFB-4DFE-AD3C-C0A9C6C93B16}.Release.Build.0 = Release|Win32
+		{7D846D1E-9874-49BE-AA48-B31E34F68682}.Debug.ActiveCfg = Debug|.NET
+		{7D846D1E-9874-49BE-AA48-B31E34F68682}.Debug.Build.0 = Debug|.NET
+		{7D846D1E-9874-49BE-AA48-B31E34F68682}.DEBUG Unicode.ActiveCfg = DEBUG Unicode|.NET
+		{7D846D1E-9874-49BE-AA48-B31E34F68682}.DEBUG Unicode.Build.0 = DEBUG Unicode|.NET
+		{7D846D1E-9874-49BE-AA48-B31E34F68682}.Release.ActiveCfg = Release|.NET
+		{7D846D1E-9874-49BE-AA48-B31E34F68682}.Release.Build.0 = Release|.NET
+		{2932141A-8C54-476A-9BA2-18EF3A2E2F51}.Debug.ActiveCfg = Debug|Win32
+		{2932141A-8C54-476A-9BA2-18EF3A2E2F51}.Debug.Build.0 = Debug|Win32
+		{2932141A-8C54-476A-9BA2-18EF3A2E2F51}.DEBUG Unicode.ActiveCfg = DEBUG Unicode|Win32
+		{2932141A-8C54-476A-9BA2-18EF3A2E2F51}.DEBUG Unicode.Build.0 = DEBUG Unicode|Win32
+		{2932141A-8C54-476A-9BA2-18EF3A2E2F51}.Release.ActiveCfg = Release|Win32
+		{2932141A-8C54-476A-9BA2-18EF3A2E2F51}.Release.Build.0 = Release|Win32
+		{31D13F99-359D-4559-A9A8-912756D23B6A}.Debug.ActiveCfg = Debug|.NET
+		{31D13F99-359D-4559-A9A8-912756D23B6A}.Debug.Build.0 = Debug|.NET
+		{31D13F99-359D-4559-A9A8-912756D23B6A}.DEBUG Unicode.ActiveCfg = Debug|.NET
+		{31D13F99-359D-4559-A9A8-912756D23B6A}.DEBUG Unicode.Build.0 = Debug|.NET
+		{31D13F99-359D-4559-A9A8-912756D23B6A}.Release.ActiveCfg = Release|.NET
+		{31D13F99-359D-4559-A9A8-912756D23B6A}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

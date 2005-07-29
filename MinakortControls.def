@@ -1,0 +1,6 @@
+; MinakortControls.def : Declares the module parameters for the DLL.
+
+LIBRARY      "MinakortControls"
+
+EXPORTS
+    ; Explicit exports can go here

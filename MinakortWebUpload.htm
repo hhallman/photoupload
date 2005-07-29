@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+<TITLE>ATL 7.0 test page for object MinakortWebUpload</TITLE>
+</HEAD>
+<BODY>
+
+<script language="javascript">
+
+var progid = "MinakortControls.MinakortWebUpload";
+
+function runUploadApp()
+{
+	var uploadControl =null;
+	try {
+		uploadControl = new ActiveXObject(progid);
+	} catch(error) {
+	}
+	if (uploadControl != null)
+	{
+		utText.innerText = uploadControl.ReleaseNumber;
+		uploadControl.LatestRelease = 2;
+	//	if(uploadControl.ReleaseNumber >= 2)
+		{
+			uploadControl.UploadPath="{1d035d5d-2276-4f87-8170-397b439fb51d}Tilfällen";
+		}
+	//	uploadControl.ShowDialog();
+		uploadControl.ShowDialogOutOfProcess();
+		utText.innerText = uploadControl.ReleaseNumber;
+	}
+	else
+	{
+		alert("Du har inte uppladdningskontrollen installerad.\nStartar installationsprogrammet.");
+		document.location.assign("MinakortControlsInstallation.exe");
+	}
+}
+
+function showRegisteredVersion()
+{
+	var v = new ActiveXObject("MinakortControls.MinakortWebUpload");
+	version.innerText = "Installerad version: " + v.ReleaseNumber;
+}
+
+</script>
+
+<input type="button" value="installera och kör!" onclick="javascript:runUploadApp();" ID="Button1" NAME="Button1">
+<input type="button" value="Kontrollera installerad version" onclick="javascript:showRegisteredVersion();" ID="Button2" NAME="Button2">
+<div id="utText">utText</div>
+<div id="version">version</div>
+
+
+<!--
+
+<p>Börja ladda upp: 
+<input type=button onclick=MinakortWebUpload.ShowDialog(); value="Ladda upp!">
+<input type=button onclick=MinakortWebUpload.ShowDialogOutOfProcess(); value="Ladda upp surrogated!">
+</p>
+<OBJECT ID="MinakortWebUpload" CLASSID="CLSID:215DA363-C55E-4597-861A-753F6C927E31"
+codebase="http://localhost/minakortcontrols30101.cab">
+
+</OBJECT>
+
+<script language="javascript">
+//alert(document.cookie);
+
+
+</script>
+
+<input type=text id=quota>
+<input type=text id=used>
+<br>
+<input type=button onclick="MinakortWebUpload.Quota=quota.value" value='sätt tillgänglig'>
+<input type=button onclick="MinakortWebUpload.UsedQuota=used.value" value='sätt använd'>
+
+<br>
+
+<input type=button onclick="MinakortWebUpload.UploadPath = 'hugos näste';" value="Sätt 'Hugos näste'">
+-->
+
+</BODY>
+</HTML>

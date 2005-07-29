@@ -1,0 +1,8 @@
+[version]
+    signature="$CHICAGO$"
+    AdvancedINF=2.0
+ [Add.Code]
+    gdiplus.dll
+ [gdiplus.dll]
+    file-win32-x86=thiscab
+    FileVersion=5,1,3102,2180

@@ -1,0 +1,7 @@
+*.aps
+*.suo
+*.ncb
+
+Debug
+debug unicode/
+*.tlb

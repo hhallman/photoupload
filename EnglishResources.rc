@@ -1,0 +1,92 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource1.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING101           "test"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MAIN_FOUNDPHOTOS    "Found pictures"
+    IDS_MAIN_QUEUEDPHOTOS   "Queued pictures"
+    IDS_MAIN_TITLE          "Select pictures"
+    IDS_EDIT_NAME           "Name"
+    IDS_EDIT_TEXT           "Text"
+    IDS_MAIN_PROGRESSBARSTART "Click here to start!"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MAIN_STARTINGUPLOAD "Starting upload..."
+    IDS_MAIN_STARTINGWITHNOTHING 
+                            "Du har inte valt några bilder att ladda upp.\r\nBörja med att dra de bilder du vill ha upp till detta fönster. Sen klickar du på högerpilen för att lägga dem i kön att ladda upp."
+    IDS_MAIN_STARTINGCAPTION "Starting upload"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

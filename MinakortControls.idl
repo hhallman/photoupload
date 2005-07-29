@@ -1,0 +1,18 @@
+// MinakortControls.idl : IDL source for MinakortControls
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (MinakortControls.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(B3D3DFE9-DEB4-44BC-B7FD-C92224D11E68),
+	version(1.0),
+	helpstring("MinakortControls 1.0 Type Library")
+]
+library MinakortControlsLib
+{
+	importlib("stdole2.tlb");
+};

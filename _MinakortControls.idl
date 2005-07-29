@@ -1,0 +1,63 @@
+import "E:\Program\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\mshtml.idl";
+import "e:\program\microsoft visual studio .net 2003\vc7\platformsdk\include\dimm.idl";
+import "E:\Program\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\mshtmhst.idl";
+import "E:\Program\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\oledb.idl";
+import "e:\program\microsoft visual studio .net 2003\vc7\platformsdk\include\transact.idl";
+import "E:\Program\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\objsafe.idl";
+
+// MinakortControls.idl : IDL source for MinakortControls
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (MinakortControls.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(9C0BEABD-415D-40F5-B082-7221DC5E479A),
+	dual,
+	helpstring("IMinakortWebUpload Interface"),
+	pointer_default(unique)
+] 
+#line 14 "m:\\photoalbum\\minakortcontrols\\minakortwebupload.h"
+interface IMinakortWebUpload : IDispatch {
+#line 16 "m:\\photoalbum\\minakortcontrols\\minakortwebupload.h"
+	[id(1),helpstring("method ShowDialog")] HRESULT  ShowDialog();
+	[id(2),helpstring("method ShowDialogOutOfProcess")] HRESULT  ShowDialogOutOfProcess();
+	[propget,id(3),helpstring("property Quota")] HRESULT  Quota([out,retval] ULONG *pVal);
+	[propput,id(3),helpstring("property Quota")] HRESULT  Quota([in] ULONG newVal);
+	[propget,id(4),helpstring("property UploadPath")] HRESULT  UploadPath([out,retval] BSTR *pVal );
+	[propput,id(4),helpstring("property UploadPath")] HRESULT  UploadPath([in] BSTR newVal);
+	[propget,id(5),helpstring("property UsedQuota")] HRESULT  UsedQuota([out,retval] UINT *pVal);
+	[propput,id(5),helpstring("property UsedQuota")] HRESULT  UsedQuota([in] UINT newVal);
+	[propget,id(6),helpstring("property LatestRelease")] HRESULT  LatestRelease([out,retval] LONG *pVal);
+	[propput,id(6),helpstring("property LatestRelease")] HRESULT  LatestRelease([in] LONG newVal);
+	[propget,id(7),helpstring("property ReleaseNumber")] HRESULT  ReleaseNumber([out,retval] LONG *pVal);
+	[propput,id(8),helpstring("property RequiredRelease")] HRESULT  RequiredRelease([in] LONG newVal);
+	[id(9),helpstring("method RunUpdate")] HRESULT  RunUpdate();
+};
+
+
+[ version(1.0), uuid(B3D3DFE9-DEB4-44BC-B7FD-C92224D11E68), helpstring("MinakortControls 1.0 Type Library") ]
+library MinakortControlsLib
+{
+	importlib("stdole2.tlb");
+	importlib("olepro32.dll");
+
+
+	importlib("stdole2.tlb");
+	[
+		version(1.0),
+		uuid(215DA363-C55E-4597-861A-753F6C927E02),
+		helpstring("MinakortWebUpload Class")
+	] 
+#line 44 "m:\\photoalbum\\minakortcontrols\\minakortwebupload.h"
+	coclass CMinakortWebUpload {
+		interface IMinakortWebUpload;
+	};
+
+}
+
+;

@@ -1,0 +1,539 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Swedish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SVE)
+#ifdef _WIN32
+LANGUAGE LANG_SWEDISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_UPLOAD_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 658
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 408
+    END
+
+    IDD_UPLOADSETTINGSDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 215
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_LOGINDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_UPDATEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 60
+    END
+
+    IDD_SHARING_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 333
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 279
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SVE)\r\n"
+    "LANGUAGE 29, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\MinakortControls.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\r\n"
+    "// 1 TYPELIB ""MinakortControls.tlb""\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+123                     RT_MANIFEST             ".\\res\\MinakortControls.cpl.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,1,1,1
+ PRODUCTVERSION 3,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041d04e4"
+        BEGIN
+            VALUE "CompanyName", "Hugonet"
+            VALUE "FileDescription", "Upload control for Minakort.com"
+            VALUE "FileVersion", "3.1.0.1"
+            VALUE "InternalName", "MinakortControls.dll"
+            VALUE "LegalCopyright", "(c) Hugonet 2004-2005.  All rights reserved."
+            VALUE "OriginalFilename", "MinakortControls.dll"
+            VALUE "ProductName", "Minakort.com upload control"
+            VALUE "ProductVersion", "3.1.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x41d, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_MINAKORTCONTROLS    REGISTRY                "MinakortControls.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_MINAKORTWEBUPLOAD   BITMAP                  ".\\res\\MinakortWebUpload.bmp"
+IDB_MINAKORT_TOP_LOGO   BITMAP                  ".\\res\\top.bmp"
+IDB_ICON_INFO           BITMAP                  ".\\res\\info.bmp"
+IDB_OVERLAY_FINISHED    BITMAP                  ".\\res\\ok-overlay.bmp"
+IDB_OVERLAY_RUNNING     BITMAP                  "res\\running-overlay.bmp"
+IDB_MINAKORT_TOP_LOGO_BLUE BITMAP                  ".\\res\\top-blue.bmp"
+IDB_GROUPICON           BITMAP                  "res\\icon_members64.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_UPLOAD_DLG DIALOGEX 0, 0, 665, 415
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | 
+    DS_CENTER | WS_MINIMIZEBOX | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES | WS_EX_APPWINDOW
+CAPTION "Ladda upp till Minakort.com"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_FOLDER_IMAGES,"SysListView32",LVS_SHOWSELALWAYS | 
+                    LVS_SHAREIMAGELISTS | LVS_AUTOARRANGE | LVS_EDITLABELS | 
+                    WS_BORDER | WS_TABSTOP,7,79,491,306
+    CONTROL         "",IDC_QUEUED_IMAGES,"SysListView32",LVS_SHOWSELALWAYS | 
+                    LVS_SHAREIMAGELISTS | LVS_AUTOARRANGE | WS_BORDER | 
+                    WS_TABSTOP,521,103,137,282
+    PUSHBUTTON      ">",IDC_FOUND2QUEUE,501,165,18,68
+    PUSHBUTTON      "<",IDC_QUEUE2FOUND,501,236,18,68
+    CONTROL         "",IDC_TOP_IMAGE,"Static",SS_BITMAP | SS_REALSIZEIMAGE,
+                    606,4,15,13
+    CONTROL         "Custom1",IDC_PROGRESSBAR,
+                    "MINAKORT_PROGRESSBAR_CONTROL_CLASS",0x0,7,390,651,18
+    PUSHBUTTON      "<<",IDC_QUEUE2FOUND_ALL,501,307,18,19
+    PUSHBUTTON      ">>",IDC_FOUND2QUEUE_ALL,501,143,18,19
+    PUSHBUTTON      "?",IDC_QUEUEHELP,502,107,16,13
+    PUSHBUTTON      "Dela / Album",IDC_BTNSHARESETTINGS,534,85,107,14
+END
+
+IDD_UPLOADSETTINGSDIALOG DIALOGEX 0, 0, 222, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Inställningar för uppladdning"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Börja",IDOK,112,164,50,14
+    PUSHBUTTON      "Avbryt",IDCANCEL,57,164,50,14
+    GROUPBOX        "Krymp bilderna innan de laddas upp",IDC_STATIC,7,7,208,
+                    152
+    CONTROL         "Ändra inte storlek",IDC_CHOOSESIZE_NOCHANGE,"Button",
+                    BS_AUTORADIOBUTTON,47,51,158,10
+    CONTROL         "Krymp till stor (1024x768)",IDC_CHOOSESIZE_LARGE,"Button",
+                    BS_AUTORADIOBUTTON,47,62,158,10
+    CONTROL         "Krymp till medelstor (800x600)",IDC_CHOOSESIZE_MEDIUM,
+                    "Button",BS_AUTORADIOBUTTON,47,73,158,10
+    CONTROL         "Krymp till jätteliten (400x300)",IDC_CHOOSESIZE_SMALL,
+                    "Button",BS_AUTORADIOBUTTON,47,84,158,10
+    LTEXT           "",IDC_COMPRESSIONRECOMMEDATION,47,119,158,31
+    ICON            "",IDC_DLGICON,18,24,21,20
+    CONTROL         "Minska kvaliten på bilderna",IDC_CHKREDUCEQUALITY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,47,102,158,10
+    LTEXT           "Du kan krympa bildrena innan de laddas upp. Då går det snabbare, och du spar utrymepå servern. Filerna på din dator ändras inte.",
+                    IDC_STATIC,47,22,158,28
+END
+
+IDD_LOGINDIALOG DIALOGEX 0, 0, 199, 169
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | 
+    DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Logga in på minakort.com"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_USERNAME,49,54,133,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,49,72,133,14,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "Spara lösenordet.",IDC_CHK_SAVE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,49,91,133,10
+    DEFPUSHBUTTON   "OK",IDOK,104,148,50,14
+    PUSHBUTTON      "Avbryt",IDCANCEL,43,148,50,14
+    LTEXT           "Inloggningen sparas på samma ställe som när du loggar in med Internet explorer på webbsidan.",
+                    IDC_STATIC,49,104,133,35
+    GROUPBOX        "Ange användarnamn och lösenord",IDC_STATIC,7,7,185,134
+    LTEXT           "För att ladda upp måste du ha ett konto. Logga in här, eller skapa ett på webbsidan.",
+                    IDC_RESULT,49,20,133,32
+    ICON            IDI_MINAKORTLOGO,IDC_DLGICON,17,22,20,20
+    LTEXT           "Namn:",IDC_STATIC,11,56,32,8,0,WS_EX_RIGHT
+    LTEXT           "Lösenord:",IDC_STATIC,11,74,32,8,0,WS_EX_RIGHT
+END
+
+IDD_UPDATEDLG DIALOGEX 0, 0, 186, 67
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_FIXEDSYS | 
+    DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Minakort"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_UPDATEPROGRESS,"msctls_progress32",WS_BORDER,12,
+                    38,162,14
+    GROUPBOX        "Laddar ner och installerar uppdateringar",IDC_STATIC,6,
+                    6,174,54
+    LTEXT           "Storlek / färdigt:",IDC_STATIC,16,24,62,8
+    LTEXT           "",IDC_UPDATEPROGRESSTEXT,78,24,96,8
+END
+
+IDD_SHARING_DIALOG DIALOGEX 0, 0, 340, 286
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Delning"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,172,265,50,14
+    PUSHBUTTON      "Avbryt",IDCANCEL,116,265,50,14
+    CONTROL         "",IDC_SHARELIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_EDITLABELS | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,28,107,282,111
+    CONTROL         "Låt dem som ser bilderna bidra med egna bilder",
+                    IDC_LETFRIENDS_ADD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    45,234,210,10
+    CONTROL         "Dela ut till mina vänner",IDC_SHARETOFRIENDS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,45,222,219,10
+    LTEXT           "Skriv namnet på dem du vill dela ut bilderna till. Medlemmar söks på minakort, och du kan välja bland de som hittas.",
+                    IDC_STATIC,73,73,223,21
+    CONTROL         "",IDC_SHARING_ICON,"Static",SS_BITMAP | 
+                    SS_REALSIZEIMAGE | NOT WS_VISIBLE,17,67,15,13,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "Album",IDC_STATIC,7,7,326,41
+    GROUPBOX        "Delning",IDC_STATIC,7,52,326,200
+    EDITTEXT        IDC_CATEGORYNAME,149,22,135,14,ES_AUTOHSCROLL
+    LTEXT           "Lägg dina bilder i ett album:",IDC_STATIC,52,25,89,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MINAKORTLOGO        ICON                    "MinakortLogo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN_MENU MENU 
+BEGIN
+    POPUP "Tema"
+    BEGIN
+        MENUITEM "Grön (standard)",             ID_STYLE_GREEN
+        MENUITEM "Blå",                         ID_STYLE_BLUE
+    END
+END
+
+IDR_FOLDERMENU MENU 
+BEGIN
+    POPUP "Hittade Bilder"
+    BEGIN
+        MENUITEM "Ta bort bild",                ID_REMOVE_FOLDERITEM
+        MENUITEM "Ta bort alla bilder",         ID_CLEAR_FOLDERLIST
+    END
+END
+
+IDR_QUEUEMENU MENU 
+BEGIN
+    POPUP "Köade bilder"
+    BEGIN
+        MENUITEM "Ta bort bild",                ID_QUEUE_DELETEITEM
+        MENUITEM "Rensa färdiga bilder",        ID_CLEAR_FINISHED
+        MENUITEM "Rensa köande bilder",         ID_CLEAR_QUEUE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINACC ACCELERATORS 
+BEGIN
+    VK_ESCAPE,      ID_ESCAPE,              VIRTKEY, NOINVERT
+    VK_RETURN,      ID_RETURN,              VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_MAIN_FOUNDPHOTOS    "Hittade bilder"
+    IDS_MAIN_QUEUEDPHOTOS   "Bilder i kö"
+    IDS_MAIN_TITLE          "Välj bilder"
+    IDS_EDIT_NAME           "Namn"
+    IDS_EDIT_TEXT           "Text"
+    IDS_MAIN_PROGRESSBARSTART "Clicka här för att starta!"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MAIN_STARTINGUPLOAD "Startar uppladning..."
+    IDS_MAIN_STARTINGWITHNOTHING 
+                            "Du har inte valt några bilder att ladda upp.\r\nBörja med att dra de bilder du vill ha upp till detta fönster. Sen klickar du på högerpilen för att lägga dem i kön att ladda upp."
+    IDS_MAIN_STARTINGCAPTION "Börjar ladda upp"
+    IDS_TIP_START_TITLE     "Hämta bilder"
+    IDS_TIP_START_TEXT      "Välj bilder genom att dra dem till fönstret.\r\nFlytta sen de som är klara att ladda upp til kön till höger med pilknapparna.\r\n\r\nStarta uppladdningen genom att klicka längst ner."
+    IDS_TIP_START_BTN1      "Ok"
+    IDS_TIP_START_BTN2      "Visa mina bilder"
+    IDS_MAIN_NONEFOUND      "Det fanns inga bilder i rätt format (jpeg, bmp, etc..) bland de filer/mappar du drog hit.\r\nAlternativt har du redan lagt till alla bilderna som hittades.\r\n\r\nDet går till exempel inte att ladda upp photoshop-filer eller format som är speciella för något visst program.\r\nÖppna bilderna i programmet du gjort dem med, och spara dem därifrån till något välkänt format."
+    IDS_MAIN_ADDINGCAPTION  "Väljer bilder"
+    IDS_MAIN_QUEUEHELP_TITLE "Tips"
+    IDS_MAIN_QUEUEHELP_TEXT "Om du vill namnge eller skriva en text till dina bilder klickar du bara på dem så kan du börja skriva. Det kommer upp ett fönster för detaljer när du börjat skriva.\r\n\r\nDu kan ändra texter även när bilderna är uppladdade - namnen uppdateras i bakgrunden automatiskt."
+    IDS_MAIN_INPROGRESS_ABORTBTN "Avbryt"
+    IDS_MAIN_INPROGRESS_RUNINBAKGROUNDBTN "Kör i bakgrunden"
+    IDS_LOGIN_INVALID_ENTRY "Ange användarnamn och lösenord."
+    IDS_LOGIN_CAPTION       "Loggar in"
+    IDS_MAIN_ABORTQUESTION  "En uppladdning pågår.\r\nVill du avbryta uppladdningen?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MAIN_UPLOADINGCAPTION "Laddar upp"
+    IDS_MAIN_ABORTUPLOADQUESTION 
+                            "Vill du verkligen avbryta uppladdningen?\r\n\r\nDu kan fortsätta senare."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VALUE2STR_L1        "mindre än 1"
+    IDS_LOGIN_WRONGUSERNAMEPWD "Fel användarnamn och/eller lösenord."
+    IDS_LOGIN_SERVERERROR   "Servern råkade ut för ett fel när den skulle hantera din inloggning."
+    IDS_VALUE2STR_V         "ungefär %d"
+    IDS_STATUS_TITLE_1      "Laddar upp en bild"
+    IDS_STATUS_TITLE_N      "Laddar upp %d bilder"
+    IDS_STATUS_SIZE         "Du laddar upp %1MB (%2MB klart) med bilder."
+    IDS_STATUS_SPEED        "Uppladdningen går med %1KB per sekund. Dvs. %2MB per minut"
+    IDS_STATUS_REMAINING_1N "%d bild är redan klar, och de andra %d borde vara klara om %d minuter."
+    IDS_STATUS_REMAINING_NN "%d bilder är redan klara, och de andra %d borde vara klara om %d minuter."
+    IDS_MAIN_UPLOADRESULT_NETWORKERROR 
+                            "Det har blivit problem med att kommunicera med servern."
+    IDS_MAIN_UPLOADRESULT_GENERALERROR 
+                            "Programmet har drabbats av ett oväntat fel. Uppladdningen är avbruten.\r\nStarta om programmet."
+    IDS_MAIN_UPLOADRESULT_FINISHED "Uppladdningen är klar!"
+    IDS_MAIN_UPLOADRESULT_ABORTED "Uppladdningen avbröts."
+    IDS_PROGRESSBAR_INDETERMINATE "Uppladdning pågår..."
+    IDS_PROGRESSBAR_1       "Mindre än en minut kvar...."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PROGRESSBAR_1P      "Drygt en minut kvar..."
+    IDS_PROGRESSBAR_N       "Ungefär %1!d! minuter kvar..."
+    IDS_QUOTARECOMMENDATION_ANY 
+                            "Du får antagligen plats med alla bilder på servern även om du inte krymper bilderna."
+    IDS_QUOTARECOMMENDATION_LL 
+                            "För att få plats med alla bilder på servern bode du krympa bilderna till ""stor""."
+    IDS_QUOTARECOMMENDATION_LS 
+                            "För att få plats med alla bilder på servern bode du krympa bilderna till ""stor"", och använda reducerad kvalitet."
+    IDS_QUOTARECOMMENDATION_ML 
+                            "För att få plats med alla bilder på servern bode du krympa bilderna till ""medelstor""."
+    IDS_QUOTARECOMMENDATION_MS 
+                            "För att få plats med alla bilder på servern bode du krympa bilderna till ""medelstor"", och använda reducerad kvalitet."
+    IDS_QUOTARECOMMENDATION_SL 
+                            "För att få plats med alla bilder på servern bode du krympa bilderna till ""jätteliten""."
+    IDS_QUOTARECOMMENDATION_SS 
+                            "För att få plats med alla bilder på servern bode du krympa bilderna till ""jätteliten"", och använda reducerad kvalitet."
+    IDS_QUOTARECOMMENDATION_NONE 
+                            "Du har väldigt lite plats på servern för alla bilderna. Det är inte säkert alla får plats."
+    IDS_MAIN_CLIENTOLD_TEXT "Den här versionen av uppladdningsprogrammet är för gammal för att fungera. Gå till hemsidan för en nyare version."
+    IDS_MAIN_ERROR          "Fel"
+    IDS_STARTUP_JOBSMISSING "När listan på bilder i kö för att laddas upp skulle återställas från förra gången programmet kördes, visade det sig att en eller flera bilder inte kan hittas på samma ställe."
+    IDS_STARTUP_RESTORINGJOBS "Återställer listor"
+    IDS_CLEAR_LIST          "Rensa lista"
+    IDS_CLEAR_LISTQUESTION  "Vill du rensa hela listan på hittade bilder?"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CLEAR_FOLDERLIST     "Töm listan på hittade bilder."
+    ID_CLEAR_LIST           "Rensar bilder i denna lista."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_REMOVE_FOLDERITEM    "Tar bort bilden från listan."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_UPDATE_STARTING     "Startar..."
+    IDS_UPDATE_TOOOLDCLIENT "Den version av uppladdningskontrollen du har är för gammal. Du måste uppdatera innan du kan ladda upp bilder.\r\n\r\nVill du starta en automatisk uppdatering nu?"
+    IDS_UPDATE_NEWVERSIONAVAILABLETEXT 
+                            "Det finns en ny version av uppladdningskontrollen.\r\n\r\nVill du starta en automatisk uppdatering nu?"
+    IDS_UPDATE_TOOOLDCLIENT_CAPTION "Uppdatering krävs"
+    IDS_UPDATE_NEWVVERSIONAVAILABLE "Uppdatering tillgänglig"
+    IDS_UPDATE_INSTALLINGCAPTION "Installerar Minakortkontroller"
+    IDS_UPDATE_INSTALLATIONFINISHED "Instalallationen är klar."
+    IDS_UPDATE_INSTALLATIONFAILED "Installationen misslyckades.\r\n\r\n"
+    IDS_UPDATE_SERVERMESSAGECAPTION "Hämtar program"
+    IDS_ERROROCCURED        "Ett fel har uppstått."
+    IDS_ERROROCCURED_CAPTION "Oväntat fel"
+    IDS_UPDATEERROR_COMM    "Problem med kommunikation med servern."
+    IDS_UPDATEERROR_FILE    "Problem med att skriva nedladdad data till hårddisk."
+    IDS_UPDATEERROR_OLDCLIENT 
+                            "Programmet är för gammalt för att kunna uppdatera sig själv. Gå till webbsidan och ladda ner installationsprogrammet."
+    IDS_UPDATEERROR_BINARY  "Filerna som laddats ner fungerade inte."
+    IDS_UPDATEERROR_REG     "Filerna som laddats ner kunde inte installeras."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_UPDATEERROR_UNKNOWN "Ett oväntat fel uppstod."
+    IDS_CLEARLIST           "Rensar lista"
+    IDS_CLEAR_FINISHEDLIST  "Vill du ta bort alla bilder som är färdiguppladdade?"
+    IDS_CLEAR_QUEUE         "Vill du ta bort alla bilder i kö för att laddas upp?"
+    IDS_INSTALLNOADMIN      "Du har inte administratörsrättigheter på den här datorn. Så installationer och/eller uppdateringar kommer bara att påverka dig. (Inte andra användare av denna dator.)"
+    IDS_INSTALLNOADMINCAPTION "Begränsad installation"
+    IDS_SHARE_NOCONTACT     "Servern kunde inte kontaktas, så du kan inte skapa några album\r\nBilderna du laddar upp kommer hamna i din hemkategori."
+    IDS_NETWORKPROBLEM_CAPTION "Nätverksproblem"
+    IDS_SHARE_NOSECURITYPERMISSION 
+                            "Du får inte ändra behörigheter för den här kategorin."
+    IDS_SHARE_CHOOSING_CAPTION "Väljer album"
+    IDS_SHARE_NOADDPERMISSION 
+                            "Du kan inte lägga bilder till det albumet.\r\nBe ägaren om lov först."
+    IDS_SHARE_DOUBLENAME    "Namnet finns redan i listan."
+    IDS_SHARE_DOUBLENAME_CAPTION "Dublett"
+    IDS_SHARE_CLM_NAME      "Namn"
+    IDS_SHARE_CLM_DETAILS   "Detaljer"
+    IDS_SHARE_ACT_REMOVE    "<Ta bort>"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SHARE_NAMELOOKUPFAIL "Namnuppslagning misslyckades"
+    IDS_SHARE_NAMELOOKUP_FOUND_N "Hittade %1!u!: "
+    IDS_SHARE_NAMELOOKUP_FOUND_0 "Hittade inget"
+    IDS_SHARE_REMOVEALLNAMES "Vill du ta bort alla markerade namn?"
+    IDS_CLEARLIST_CAPTION   "Rensa lista"
+    IDS_MAIN_CANTEDITSHAREWHILEUPLOADING 
+                            "Det pågår en uppladdning, så du kan inte ändra delningsinställningar nu.\r\nAvbryt uppladdningen om du vill fortsätta."
+    IDS_MAIN_UPLOADINPROGRES "Uppladdning pågår"
+END
+
+#endif    // Swedish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SVE)
+LANGUAGE 29, 1
+#pragma code_page(1252)
+#include "res\MinakortControls.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+// 1 TYPELIB "MinakortControls.tlb"
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
