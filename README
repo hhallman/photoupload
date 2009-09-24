@@ -1,0 +1,16 @@
+Web control for uploading picture files to the www.minakort.com website.
+It is possible to adapt to upload to your photosite instead.
+
+
+Designed to provide a very smooth user experience, where the user can annotate pictures while the upload is in progress.
+
+
+About the repository:
+This repository was first created in September of 2009, no less than four years after the project was last touched. So please excuse if some generated files are added. The generated files should be removed and some cleaning up is bound to do. However, I don't have a build environment for these files right now. Created the repository to get the files under control, instead of having them laying around. (Note that I did have version control on the files, but this has been lost as the version control resided in MS SQL Server in some proprietary format.)
+
+The repository initial commit was created, changing the commit-date to the last-changed source file, with command:
+env GIT_AUTHOR_DATE="`ls -rt *.cpp|tail -1|xargs date -u -r`" git commit -m "Old sources retaining old change-dates of last changed
+ file: `ls -rt *.cpp|tail -1`, actual commit date: `date`"
+All the change-dates before commit are in file .changedates
+
+
